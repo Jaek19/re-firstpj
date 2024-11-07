@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>유기동물 보호 및 입양 사이트</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="/static/js/script.js" defer></script>
+    <script src="/static/js/web.js" defer></script>
+    <link rel="stylesheet" href="/static/style/contact.css">
+    <link rel="stylesheet" href="/static/style/home.css">
+    <link rel="stylesheet" href="/static/style/intro.css">
+    <link rel="stylesheet" href="/static/style/introduce.css">
+    <link rel="stylesheet" href="/static/style/layout.css">
+    <link rel="stylesheet" href="/static/style/style.css">
+    <link rel="stylesheet" href="/static/style/volunteer.css">
+  </head>
+  <body>
+    <button id="scroll-btn" class="scroll-btn">
+      <span class="arrow"></span>
+    </button>
+    <section id="intro">
+      <div class="left_box">
+        <h2 class="big_logo">
+          <img src="/static/images/logo.png" alt="로고 이미지" />
+        </h2>
+      </div>
+      <div class="right_box"></div>
+    </section>
+    <div id="layout">
+      <header id="header">
+        <figure><img src="/static/images/logo.png" alt="로고 이미지" /></figure>
+        <nav>
+          <ul>
+            <button class="material-icons">menu</button>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#introduce">소개</a></li>
+            <li><a href="#animals">동물</a></li>
+            <li><a href="#volunteer">자원봉사</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section id="home">
+          <div id="main-video-container">
+            <video id="main-video" autoplay muted loop playsinline>
+              <source src="/static/videos/movie.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="content">
+            <h2>Welcome</h2>
+            <p>당신의 특별한 가족을 찾아보세요</p>
+          </div>
+        </section>
+        <section id="introduce">
+          <div id="quoteContainer">
+            <h2 id="quoteText">사지말고 입양해주세요</h2>
+          </div>
+          <div class="box-container">
+            <div class="box">
+              <figure>
+                <img src="/static/images/plus.png" alt="더하기이미지" />
+              </figure>
+              <p>사랑이 더해집니다</p>
+              <p>버리지 말고 사랑받을 수 있는 기회를 주세요</p>
+            </div>
+            <div class="box">
+              <figure>
+                <img src="/static/images/multiply.png" alt="곱하기이미지" />
+              </figure>
+              <p>이로움이 배가됩니다</p>
+              <p>사람과 동물 모두에게 이로운 서비스를 지향합니다</p>
+            </div>
+            <div class="box">
+              <figure>
+                <img src="/static/images/smile.png" alt="웃는이미지" />
+              </figure>
+              <p>모두가 행복합니다</p>
+              <p>새로운 가족과 행복한 만남이 이루어집니다</p>
+            </div>
+          </div>
+        </section>
+        <section id="animals"></section>
+        <section id="volunteer">
+          <h2>자원봉사 종류</h2>
+          <div id="volunteerContainer">
+            <div class="volunteerContent">
+              <figure>
+                <img src="/static/images/walk.jpg" alt="산책 이미지" />
+                <figcaption>유기견 산책 및 관리</figcaption>
+              </figure>
+              <p>유기견들의 스트레스 해소와 사회성 향상을 위한 산책 봉사</p>
+              <button type="button" class="applyBtn">신청하기</button>
+            </div>
+            <div class="volunteerContent">
+              <figure>
+                <img src="/static/images/cut.jpg" alt="미용 이미지" />
+                <figcaption>유기견 미용</figcaption>
+              </figure>
+              <p>
+                동물 미용의 경험이 있고, 미용 장비를 가지고 계신 분들의 미용
+                케어 봉사
+              </p>
+              <button type="button" class="applyBtn">신청하기</button>
+            </div>
+            <div class="volunteerContent">
+              <figure>
+                <img src="/static/images/photo.jpg" alt="촬영 이미지" />
+                <figcaption>유기동물 촬영</figcaption>
+              </figure>
+              <p>촬영 장비를 소유한 촬영팀(2인이상)의 사진(영상) 촬영 봉사</p>
+              <button type="button" class="applyBtn">신청하기</button>
+            </div>
+          </div>
+        </section>
+        <section id="contact">
+          <div class="contact-container">
+            <h2>Contact Us</h2>
+            <p>Follow us on social media:</p>
+            <div class="social-media">
+              <a href="https://www.facebook.com/" target="_blank"
+                ><img src="/static/images/facebook.png" alt="Facebook로고"
+              /></a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><img src="/static/images/instagram.png" alt="Instagram로고"
+              /></a>
+              <a href="https://twitter.com/" target="_blank"
+                ><img src="/static/images/twitter.png" alt="Twitter로고"
+              /></a>
+              <a href="https://www.youtube.com/" target="_blank"
+                ><img src="/static/images/youtube.png" alt="YouTube로고"
+              /></a>
+            </div>
+            <div id="additional-info">
+              <div class="ad-card">
+                <h3>오시는 길</h3>
+                <p>서울특별시 123</p>
+              </div>
+              <div class="ad-card">
+                <h3>운영 시간</h3>
+                <p>월요일 - 금요일: 오전 9시 - 오후 6시</p>
+                <p>토요일: 오전 10시 - 오후 4시</p>
+                <p>일요일 및 공휴일: 휴무</p>
+              </div>
+              <div class="ad-card">
+                <h3>문의 전화</h3>
+                <p>02-123-4567</p>
+              </div>
+            </div>
+            <footer>
+              <p>&copy; 2024 Your Organization. All rights reserved.</p>
+            </footer>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

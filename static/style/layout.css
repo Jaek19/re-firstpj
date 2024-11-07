@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(245, 245, 220, 0.9);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1000;
+  padding: 5px 3%;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease;
+  height: 100px;
+}
+
+header.visible {
+  transform: translateY(0);
+}
+
+header figure {
+  flex: 0 0 auto;
+}
+
+header figure img {
+  width: 80px;
+  height: auto;
+  display: block;
+}
+
+nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.5rem;
+  transition: color 0.3s, transform 0.3s;
+  display: inline-block;
+  padding: 3px 8px;
+}
+
+nav ul li a:hover {
+  color: #007bff;
+  transform: translateY(-2px);
+}
+
+.material-icons {
+  font-size: 24px;
+  color: #333;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+footer {
+  padding-top: 30px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  color: #888;
+  font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+    padding: 5px 3%;
+  }
+
+  nav {
+    width: auto;
+    justify-content: flex-end;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(245, 245, 220, 0.9);
+    padding: 5px 0;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .material-icons {
+    display: block;
+    position: static;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  header figure img {
+    width: 70px;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+  }
+}
